@@ -44,7 +44,7 @@ final class ApiManager
             guard let jsonResult = try? JSONDecoder().decode(RAMLocation.self, from: data) else { return }
             completion(.success(jsonResult))
         }
-        task.resume()4
+        task.resume()
     }
     
     private func getLocationUrl(from url: String) -> String
