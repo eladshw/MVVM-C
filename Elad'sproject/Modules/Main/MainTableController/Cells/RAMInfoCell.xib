@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RAMInfoCell" rowHeight="189" id="IU0-MH-jQN" customClass="RAMInfoCell" customModule="Elad_sproject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IU0-MH-jQN" id="9PP-mp-jiN">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKr-IF-Z5M">
+                        <rect key="frame" x="8" y="8" width="456" height="173"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dc-Ki-Uh3">
+                                <rect key="frame" x="0.0" y="0.0" width="456" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-Ld-mjD" userLabel="Status">
+                                <rect key="frame" x="0.0" y="36" width="456" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="species" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uve-NH-Ckt" userLabel="Species">
+                                <rect key="frame" x="0.0" y="72.5" width="456" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q9-38-gdW" userLabel="gender">
+                                <rect key="frame" x="0.0" y="108.5" width="456" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-7c-8pf" userLabel="origin">
+                                <rect key="frame" x="0.0" y="145" width="456" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sKr-IF-Z5M" secondAttribute="bottom" constant="8" id="KE1-X0-GYK"/>
+                    <constraint firstItem="sKr-IF-Z5M" firstAttribute="leading" secondItem="9PP-mp-jiN" secondAttribute="leading" constant="8" id="fyC-Tl-sTv"/>
+                    <constraint firstItem="sKr-IF-Z5M" firstAttribute="top" secondItem="9PP-mp-jiN" secondAttribute="top" constant="8" id="qzF-Tz-g3t"/>
+                    <constraint firstAttribute="trailing" secondItem="sKr-IF-Z5M" secondAttribute="trailing" constant="8" id="tLG-nQ-Chb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="genderLabel" destination="6q9-38-gdW" id="5uI-Ih-hrQ"/>
+                <outlet property="nameLabel" destination="5Dc-Ki-Uh3" id="7WD-6b-Vrz"/>
+                <outlet property="originLabel" destination="rFD-7c-8pf" id="2eA-hB-q3M"/>
+                <outlet property="speciesLabel" destination="uve-NH-Ckt" id="tXa-oU-TYX"/>
+                <outlet property="statusLabel" destination="wsL-Ld-mjD" id="K5D-cK-gGI"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="67.299107142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

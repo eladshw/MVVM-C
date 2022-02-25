@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		52D49FDC27C8CD9D004C52AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */; };
 		52D49FDE27C8CD9D004C52AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */; };
-		52D49FE027C8CD9D004C52AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDF27C8CD9D004C52AB /* ViewController.swift */; };
+		52D49FE027C8CD9D004C52AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDF27C8CD9D004C52AB /* MainViewController.swift */; };
 		52D49FE327C8CD9D004C52AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D49FE127C8CD9D004C52AB /* Main.storyboard */; };
 		52D49FE527C8CDA0004C52AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D49FE427C8CDA0004C52AB /* Assets.xcassets */; };
 		52D49FE827C8CDA0004C52AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D49FE627C8CDA0004C52AB /* LaunchScreen.storyboard */; };
+		52D49FF227C8D04A004C52AB /* AppCoordiantor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FF127C8D04A004C52AB /* AppCoordiantor.swift */; };
+		52D49FF427C8D074004C52AB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FF327C8D074004C52AB /* Coordinator.swift */; };
+		52D49FF827C8D117004C52AB /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FF727C8D117004C52AB /* Storyboardable.swift */; };
+		52D49FFD27C8D870004C52AB /* MainTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FFC27C8D870004C52AB /* MainTableController.swift */; };
+		52D49FFF27C8D921004C52AB /* MainTableDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FFE27C8D921004C52AB /* MainTableDataController.swift */; };
+		52D4A00227C8DBA7004C52AB /* RAMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00127C8DBA7004C52AB /* RAMCharacter.swift */; };
+		52D4A00527C8DDDB004C52AB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00427C8DDDB004C52AB /* MainViewModel.swift */; };
+		52D4A00927C8DF01004C52AB /* ExtensionUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00827C8DF01004C52AB /* ExtensionUITableView.swift */; };
+		52D4A00C27C8DF85004C52AB /* RAMInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00B27C8DF85004C52AB /* RAMInfoCell.swift */; };
+		52D4A00E27C8DF99004C52AB /* RAMInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D4A00D27C8DF99004C52AB /* RAMInfoCell.xib */; };
+		52D4A01127C8EA97004C52AB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01027C8EA97004C52AB /* ApiManager.swift */; };
+		52D4A01327C8EAFA004C52AB /* RAMApiBaseDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */; };
+		52D4A01527C90DB5004C52AB /* RAMLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01427C90DB5004C52AB /* RAMLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52D49FD827C8CD9D004C52AB /* Elad'sproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elad'sproject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52D49FDF27C8CD9D004C52AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52D49FDF27C8CD9D004C52AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		52D49FE227C8CD9D004C52AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52D49FE427C8CDA0004C52AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D49FE727C8CDA0004C52AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D49FE927C8CDA0004C52AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D49FF127C8D04A004C52AB /* AppCoordiantor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordiantor.swift; sourceTree = "<group>"; };
+		52D49FF327C8D074004C52AB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		52D49FF727C8D117004C52AB /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		52D49FFC27C8D870004C52AB /* MainTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableController.swift; sourceTree = "<group>"; };
+		52D49FFE27C8D921004C52AB /* MainTableDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableDataController.swift; sourceTree = "<group>"; };
+		52D4A00127C8DBA7004C52AB /* RAMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMCharacter.swift; sourceTree = "<group>"; };
+		52D4A00427C8DDDB004C52AB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		52D4A00827C8DF01004C52AB /* ExtensionUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUITableView.swift; sourceTree = "<group>"; };
+		52D4A00B27C8DF85004C52AB /* RAMInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMInfoCell.swift; sourceTree = "<group>"; };
+		52D4A00D27C8DF99004C52AB /* RAMInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RAMInfoCell.xib; sourceTree = "<group>"; };
+		52D4A01027C8EA97004C52AB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMApiBaseDestinations.swift; sourceTree = "<group>"; };
+		52D4A01427C90DB5004C52AB /* RAMLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,116 @@
 		52D49FDA27C8CD9D004C52AB /* Elad'sproject */ = {
 			isa = PBXGroup;
 			children = (
+				52D4A00F27C8EA88004C52AB /* Networking */,
+				52D4A00727C8DEEE004C52AB /* Extenstions */,
+				52D4A00027C8DB4E004C52AB /* Models */,
+				52D49FFA27C8D71A004C52AB /* Modules */,
+				52D49FF527C8D102004C52AB /* Protocols */,
+				52D49FF027C8D02C004C52AB /* Coordinators */,
 				52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */,
 				52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */,
-				52D49FDF27C8CD9D004C52AB /* ViewController.swift */,
 				52D49FE127C8CD9D004C52AB /* Main.storyboard */,
 				52D49FE427C8CDA0004C52AB /* Assets.xcassets */,
 				52D49FE627C8CDA0004C52AB /* LaunchScreen.storyboard */,
 				52D49FE927C8CDA0004C52AB /* Info.plist */,
 			);
 			path = "Elad'sproject";
+			sourceTree = "<group>";
+		};
+		52D49FF027C8D02C004C52AB /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FF127C8D04A004C52AB /* AppCoordiantor.swift */,
+				52D49FF327C8D074004C52AB /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		52D49FF527C8D102004C52AB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FF627C8D117004C52AB /* Storyboardable */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		52D49FF627C8D117004C52AB /* Storyboardable */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FF727C8D117004C52AB /* Storyboardable.swift */,
+			);
+			path = Storyboardable;
+			sourceTree = "<group>";
+		};
+		52D49FFA27C8D71A004C52AB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FFB27C8D72A004C52AB /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52D49FFB27C8D72A004C52AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FDF27C8CD9D004C52AB /* MainViewController.swift */,
+				52D49FFE27C8D921004C52AB /* MainTableDataController.swift */,
+				52D4A00327C8DDBE004C52AB /* ViewModel */,
+				52D4A00627C8DE29004C52AB /* MainTableController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		52D4A00027C8DB4E004C52AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A00127C8DBA7004C52AB /* RAMCharacter.swift */,
+				52D4A01427C90DB5004C52AB /* RAMLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52D4A00327C8DDBE004C52AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A00427C8DDDB004C52AB /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52D4A00627C8DE29004C52AB /* MainTableController */ = {
+			isa = PBXGroup;
+			children = (
+				52D49FFC27C8D870004C52AB /* MainTableController.swift */,
+				52D4A00A27C8DF6E004C52AB /* Cells */,
+			);
+			path = MainTableController;
+			sourceTree = "<group>";
+		};
+		52D4A00727C8DEEE004C52AB /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A00827C8DF01004C52AB /* ExtensionUITableView.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		52D4A00A27C8DF6E004C52AB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A00B27C8DF85004C52AB /* RAMInfoCell.swift */,
+				52D4A00D27C8DF99004C52AB /* RAMInfoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		52D4A00F27C8EA88004C52AB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A01027C8EA97004C52AB /* ApiManager.swift */,
+				52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D4A00E27C8DF99004C52AB /* RAMInfoCell.xib in Resources */,
 				52D49FE827C8CDA0004C52AB /* LaunchScreen.storyboard in Resources */,
 				52D49FE527C8CDA0004C52AB /* Assets.xcassets in Resources */,
 				52D49FE327C8CD9D004C52AB /* Main.storyboard in Resources */,
@@ -138,8 +266,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D49FE027C8CD9D004C52AB /* ViewController.swift in Sources */,
+				52D49FF227C8D04A004C52AB /* AppCoordiantor.swift in Sources */,
+				52D49FE027C8CD9D004C52AB /* MainViewController.swift in Sources */,
+				52D49FF427C8D074004C52AB /* Coordinator.swift in Sources */,
+				52D4A01527C90DB5004C52AB /* RAMLocation.swift in Sources */,
+				52D49FFF27C8D921004C52AB /* MainTableDataController.swift in Sources */,
+				52D4A00C27C8DF85004C52AB /* RAMInfoCell.swift in Sources */,
+				52D4A01327C8EAFA004C52AB /* RAMApiBaseDestinations.swift in Sources */,
 				52D49FDC27C8CD9D004C52AB /* AppDelegate.swift in Sources */,
+				52D4A00527C8DDDB004C52AB /* MainViewModel.swift in Sources */,
+				52D4A00927C8DF01004C52AB /* ExtensionUITableView.swift in Sources */,
+				52D4A01127C8EA97004C52AB /* ApiManager.swift in Sources */,
+				52D49FFD27C8D870004C52AB /* MainTableController.swift in Sources */,
+				52D4A00227C8DBA7004C52AB /* RAMCharacter.swift in Sources */,
+				52D49FF827C8D117004C52AB /* Storyboardable.swift in Sources */,
 				52D49FDE27C8CD9D004C52AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
