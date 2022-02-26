@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52684DF327CA787B003028F2 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684DF227CA787B003028F2 /* InfoViewModel.swift */; };
 		52D49FDC27C8CD9D004C52AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */; };
 		52D49FDE27C8CD9D004C52AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */; };
 		52D49FE027C8CD9D004C52AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FDF27C8CD9D004C52AB /* MainViewController.swift */; };
@@ -17,7 +18,6 @@
 		52D49FF427C8D074004C52AB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FF327C8D074004C52AB /* Coordinator.swift */; };
 		52D49FF827C8D117004C52AB /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FF727C8D117004C52AB /* Storyboardable.swift */; };
 		52D49FFD27C8D870004C52AB /* MainTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FFC27C8D870004C52AB /* MainTableController.swift */; };
-		52D49FFF27C8D921004C52AB /* MainTableDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D49FFE27C8D921004C52AB /* MainTableDataController.swift */; };
 		52D4A00227C8DBA7004C52AB /* RAMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00127C8DBA7004C52AB /* RAMCharacter.swift */; };
 		52D4A00527C8DDDB004C52AB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00427C8DDDB004C52AB /* MainViewModel.swift */; };
 		52D4A00927C8DF01004C52AB /* ExtensionUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A00827C8DF01004C52AB /* ExtensionUITableView.swift */; };
@@ -26,9 +26,13 @@
 		52D4A01127C8EA97004C52AB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01027C8EA97004C52AB /* ApiManager.swift */; };
 		52D4A01327C8EAFA004C52AB /* RAMApiBaseDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */; };
 		52D4A01527C90DB5004C52AB /* RAMLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01427C90DB5004C52AB /* RAMLocation.swift */; };
+		52D4A01A27CA321C004C52AB /* RAMInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01927CA321C004C52AB /* RAMInfoCoordinator.swift */; };
+		52D4A01D27CA3708004C52AB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01C27CA3708004C52AB /* MainCoordinator.swift */; };
+		52D4A01F27CA5855004C52AB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4A01E27CA5855004C52AB /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52684DF227CA787B003028F2 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		52D49FD827C8CD9D004C52AB /* Elad'sproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elad'sproject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +45,6 @@
 		52D49FF327C8D074004C52AB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		52D49FF727C8D117004C52AB /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		52D49FFC27C8D870004C52AB /* MainTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableController.swift; sourceTree = "<group>"; };
-		52D49FFE27C8D921004C52AB /* MainTableDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableDataController.swift; sourceTree = "<group>"; };
 		52D4A00127C8DBA7004C52AB /* RAMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMCharacter.swift; sourceTree = "<group>"; };
 		52D4A00427C8DDDB004C52AB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		52D4A00827C8DF01004C52AB /* ExtensionUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUITableView.swift; sourceTree = "<group>"; };
@@ -50,6 +53,9 @@
 		52D4A01027C8EA97004C52AB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMApiBaseDestinations.swift; sourceTree = "<group>"; };
 		52D4A01427C90DB5004C52AB /* RAMLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMLocation.swift; sourceTree = "<group>"; };
+		52D4A01927CA321C004C52AB /* RAMInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMInfoCoordinator.swift; sourceTree = "<group>"; };
+		52D4A01C27CA3708004C52AB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		52D4A01E27CA5855004C52AB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +88,12 @@
 		52D49FDA27C8CD9D004C52AB /* Elad'sproject */ = {
 			isa = PBXGroup;
 			children = (
+				52D49FF027C8D02C004C52AB /* Coordinators */,
 				52D4A00F27C8EA88004C52AB /* Networking */,
 				52D4A00727C8DEEE004C52AB /* Extenstions */,
 				52D4A00027C8DB4E004C52AB /* Models */,
 				52D49FFA27C8D71A004C52AB /* Modules */,
 				52D49FF527C8D102004C52AB /* Protocols */,
-				52D49FF027C8D02C004C52AB /* Coordinators */,
 				52D49FDB27C8CD9D004C52AB /* AppDelegate.swift */,
 				52D49FDD27C8CD9D004C52AB /* SceneDelegate.swift */,
 				52D49FE127C8CD9D004C52AB /* Main.storyboard */,
@@ -126,6 +132,7 @@
 		52D49FFA27C8D71A004C52AB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				52D4A01827CA31DD004C52AB /* Info */,
 				52D49FFB27C8D72A004C52AB /* Main */,
 			);
 			path = Modules;
@@ -135,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				52D49FDF27C8CD9D004C52AB /* MainViewController.swift */,
-				52D49FFE27C8D921004C52AB /* MainTableDataController.swift */,
+				52D4A01B27CA36ED004C52AB /* Coordinator */,
 				52D4A00327C8DDBE004C52AB /* ViewModel */,
 				52D4A00627C8DE29004C52AB /* MainTableController */,
 			);
@@ -155,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				52D4A00427C8DDDB004C52AB /* MainViewModel.swift */,
+				52684DF227CA787B003028F2 /* InfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +200,23 @@
 				52D4A01227C8EAFA004C52AB /* RAMApiBaseDestinations.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		52D4A01827CA31DD004C52AB /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A01927CA321C004C52AB /* RAMInfoCoordinator.swift */,
+				52D4A01E27CA5855004C52AB /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		52D4A01B27CA36ED004C52AB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				52D4A01C27CA3708004C52AB /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,15 +295,18 @@
 				52D49FE027C8CD9D004C52AB /* MainViewController.swift in Sources */,
 				52D49FF427C8D074004C52AB /* Coordinator.swift in Sources */,
 				52D4A01527C90DB5004C52AB /* RAMLocation.swift in Sources */,
-				52D49FFF27C8D921004C52AB /* MainTableDataController.swift in Sources */,
 				52D4A00C27C8DF85004C52AB /* RAMInfoCell.swift in Sources */,
 				52D4A01327C8EAFA004C52AB /* RAMApiBaseDestinations.swift in Sources */,
 				52D49FDC27C8CD9D004C52AB /* AppDelegate.swift in Sources */,
 				52D4A00527C8DDDB004C52AB /* MainViewModel.swift in Sources */,
+				52D4A01F27CA5855004C52AB /* InfoViewController.swift in Sources */,
 				52D4A00927C8DF01004C52AB /* ExtensionUITableView.swift in Sources */,
+				52D4A01D27CA3708004C52AB /* MainCoordinator.swift in Sources */,
 				52D4A01127C8EA97004C52AB /* ApiManager.swift in Sources */,
 				52D49FFD27C8D870004C52AB /* MainTableController.swift in Sources */,
 				52D4A00227C8DBA7004C52AB /* RAMCharacter.swift in Sources */,
+				52684DF327CA787B003028F2 /* InfoViewModel.swift in Sources */,
+				52D4A01A27CA321C004C52AB /* RAMInfoCoordinator.swift in Sources */,
 				52D49FF827C8D117004C52AB /* Storyboardable.swift in Sources */,
 				52D49FDE27C8CD9D004C52AB /* SceneDelegate.swift in Sources */,
 			);

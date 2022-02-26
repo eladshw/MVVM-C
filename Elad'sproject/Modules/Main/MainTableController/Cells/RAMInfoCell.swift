@@ -16,12 +16,12 @@ class RAMInfoCell : UITableViewCell
     @IBOutlet weak var genderLabel  : UILabel!
     @IBOutlet weak var originLabel  : UILabel!
     
-    func configure(viewModel: MainViewModel)
+    func configure(with viewModel: InfoViewModel)
     {
-//        nameLabel.text      = viewModel.character.name
-//        statusLabel.text    = viewModel.character.status
-//        speciesLabel.text   = viewModel.character.species
-//        genderLabel.text    = viewModel.character.gender
-//        originLabel.text    = viewModel.character.origin.name
+        nameLabel.text      = viewModel.character.name
+        statusLabel.text    = viewModel.character.status
+        speciesLabel.text   = viewModel.character.species
+        genderLabel.text    = viewModel.character.gender
+        originLabel.text    = viewModel.character.origin?.name
     }
 }

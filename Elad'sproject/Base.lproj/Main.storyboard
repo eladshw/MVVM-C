@@ -38,10 +38,43 @@
                             <constraint firstItem="cMT-AT-lYk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kyq-ee-SKN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="IEg-HG-4ft" id="Iam-BO-Bi9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="hGN-SK-F7B">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="8Yg-Je-Kg0" customClass="InfoViewController" customModule="Elad_sproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sF1-bh-bLe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk0-kC-XkB">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="POU-b5-Oic"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pk0-kC-XkB" firstAttribute="centerY" secondItem="sF1-bh-bLe" secondAttribute="centerY" id="1Cz-4X-QaC"/>
+                            <constraint firstItem="pk0-kC-XkB" firstAttribute="centerX" secondItem="sF1-bh-bLe" secondAttribute="centerX" id="LJ5-Ij-CWh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="pk0-kC-XkB" id="U4L-QH-3sa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCX-26-ZDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="131"/>
         </scene>
     </scenes>
     <resources>

@@ -10,11 +10,22 @@ import UIKit
 protocol MainTableControllerProtocol : UITableViewDelegate, UITableViewDataSource
 {
     var tableView : UITableView! { get set }
+    var viewModel : MainViewModel! { get set }
+    
+    func reloadData()
+}
+
+protocol MainTableControllerDelegate : AnyObject
+{
+    func didSelect(character: RAMCharacter)
 }
 
 class MainTableController : NSObject, MainTableControllerProtocol
 {
-    weak var tableView: UITableView!
+    weak var delegate     : MainTableControllerDelegate?
+    var viewModel        : MainViewModel!
+    
+    weak var tableView    : UITableView!
     {
         didSet
         {
@@ -33,6 +44,12 @@ class MainTableController : NSObject, MainTableControllerProtocol
     {
         tableView.register(cells: [RAMInfoCell.self])
     }
+    
+    func reloadData()
+    {
+        tableView.reloadData()
+    }
+    
 }
 
 //MARK: - UITableViewDataSource
@@ -40,7 +57,7 @@ extension MainTableController : UITableViewDataSource
 {
     func tableView(_ tableView : UITableView, numberOfRowsInSection section : Int) -> Int
     {
-        return 1
+        return viewModel.numbersOfCharacters
     }
     
     func numberOfSections(in tableView: UITableView) -> Int
@@ -54,23 +71,33 @@ extension MainTableController : UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-//        let model = timelineData.data[safe: indexPath.section]?[safe: indexPath.row]
-//
-//        let cellID = getCellIdFor(model: model)
-//        let cell   = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-//        handleCellConfiguration(for: cell, at: indexPath)
+        let cellID = "RAMInfoCell"
+        let cell   = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        handleCellConfiguration(for: cell, at: indexPath)
         
-        return UITableViewCell()
+        return cell
     }
     
     private func handleCellConfiguration(for cell: UITableViewCell, at indexPath: IndexPath)
     {
         switch cell
         {
-//        case is BTMTimelineCardCell             : configureCardCell(cell, by: indexPath)
-//        case is BTMTimelineReflectionCardCell   : configureReflectionCardCell(cell, by: indexPath)
-//        case is BTMTimelineTagCell              : configureTagCell(cell, by: indexPath)
-        default                                 : break
+            case is RAMInfoCell : configureInfoCell(cell, by: indexPath)
+            default             : break
         }
+    }
+    
+    private func configureInfoCell(_ cell: UITableViewCell, by indexPath: IndexPath)
+    {
+        guard let cell = cell as? RAMInfoCell else { return }
+        
+        let viewModel = viewModel.getInfoViewModel(at: indexPath.row)
+        cell.configure(with: viewModel)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let viewModel = viewModel.getInfoViewModel(at: indexPath.row)
+        delegate?.didSelect(character: viewModel.character)
     }
 }

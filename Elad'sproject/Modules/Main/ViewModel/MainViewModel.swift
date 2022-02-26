@@ -6,17 +6,29 @@
 //
 
 import Foundation
+import Combine
 
-struct MainViewModel
+
+protocol MainViewModelDelegate : AnyObject
+{
+    func didSelect(character: RAMCharacter)
+}
+
+class MainViewModel
 {
     let apiService = ApiManager.shared
+    weak var delegate : MainViewModelDelegate?
+    
+    @Published private(set) var characters : [RAMCharacter] = []
     
     func getCharacters()
     {
-        apiService.getCharacters { result in
+        apiService.getCharacters {[weak self] result in
+            guard let self = self else { return }
+            
             switch result
             {
-                case .success(let char): print(char)
+                case .success(let data)  : self.characters = data.results
                 case .failure(let error) : print(error)
             }
         }
@@ -32,4 +44,23 @@ struct MainViewModel
             }
         }
     }
+    
+    var numbersOfCharacters : Int
+    {
+        characters.count
+    }
+    
+    func getInfoViewModel(at index: Int) -> InfoViewModel
+    {
+        return InfoViewModel(character: characters[index])
+    }
 }
+
+extension MainViewModel : MainTableControllerDelegate
+{
+    func didSelect(character: RAMCharacter)
+    {
+        delegate?.didSelect(character: character)
+    }
+}
+ 

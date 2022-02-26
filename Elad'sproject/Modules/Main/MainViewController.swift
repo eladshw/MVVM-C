@@ -6,25 +6,37 @@
 //
 
 import UIKit
+import Combine
 
 class MainViewController: UIViewController, Storyboardable
 {
-    @IBOutlet weak var tableView : UITableView!
+    @IBOutlet private weak var tableView : UITableView!
     
-    private var tableController : MainTableControllerProtocol!
+    private var subscriptions = Set<AnyCancellable>()
     
-    private var viewModel = MainViewModel()
+    var viewModel : MainViewModel!
+    
+    var tableController : MainTableControllerProtocol!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        setupUI()
         viewModel.getCharacters()
         viewModel.getLocation(url: "https://rickandmortyapi.com/api/location/3")
-        setupUI()
+        
+        viewModel.$characters
+            .receive(on: DispatchQueue.main)
+            .sink {[weak self] characters in
+                guard let self = self else { return }
+                self.tableController.reloadData()
+        }
+        .store(in: &subscriptions)
     }
     
     private func setupUI()
     {
-        //tableController.tableView = tableView
+        tableController.viewModel = viewModel
+        tableController.tableView = tableView
     }
 }

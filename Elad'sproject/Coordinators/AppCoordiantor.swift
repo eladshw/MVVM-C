@@ -16,7 +16,7 @@ class AppCoordinator : Coordinator
     }
     
     private var navigationController = UINavigationController()
-    
+  
     var rootViewController : UIViewController
     {
         return navigationController
@@ -29,7 +29,7 @@ class AppCoordinator : Coordinator
     
     private func showMainScreen()
     {
-        let mainViewController = MainViewController.instantiate()
-        navigationController.pushViewController(mainViewController, animated: true)
+       let coordinator = MainCoordinator(navigationController: navigationController)
+       pushCoordinator(coordinator)
     }
 }
